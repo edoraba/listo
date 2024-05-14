@@ -19,7 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} text-black bg-white min-h-screen relative`}>
         <AuthProvider>
           <Navbar />
           {children}
@@ -28,4 +29,3 @@ export default function RootLayout({
     </html>
   );
 }
-
